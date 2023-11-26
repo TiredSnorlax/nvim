@@ -52,15 +52,15 @@ return {
       end,
     },
   
+  -- animations
     {
-      "folke/tokyonight.nvim",
-      opts = {
-        transparent = true,
-        styles = {
-          sidebars = "transparent",
-          floats = "transparent",
-        },
-      },
+      "echasnovski/mini.animate",
+      event = "VeryLazy",
+      opts = function(_, opts)
+        opts.scroll = {
+          enable = false,
+        }
+      end,
     },
 
     {
